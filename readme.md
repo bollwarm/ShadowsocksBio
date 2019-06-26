@@ -307,6 +307,23 @@ Postern是在 Android 上最接近于 Surge 模式的软件，其可以兼容 Su
 
 现阶段为了能在安全与速度之间取得平衡，我个人更加推荐使用 Shadowsocks-libev + obfs混淆。
 
+Shadowsocks目前有四个知名的插件simple-obfs、GoQuiet、kcptun、v2ray-plugin
+
+https://github.com/shadowsocks/simple-obfs
+https://github.com/cbeuw/GoQuiet
+https://github.com/shadowsocks/v2ray-plugin
+https://github.com/shadowsocks/kcptun
+
+
+simple-obfs最为流行，
+kcptun和v2ray-plugin也得到了广泛支持（win、mac、安卓客户端、IOS的小火箭测试版都提供了支持），
+可以说目前SS插件解决不了问题，ssr、v2ray也没有更好的解决方法了。。。
+不忘初心，坚持最初的选择也是最好的选择！！！
+
+下载 obfs-local.zip 
+https://github.com/shadowsocks/simple-obfs/releases
+下载后，解压出来的文件一定要和 Windows 客户端的 exe 文件放在同一文件夹下
+
 #### obfs 混淆
 
 obfs 混淆最大的作用是对 SS 流量进行伪装, 在不添加obfs的情况下, 运营商服务器通过的流量为未知的加密流量, 据说 GFW 已经有一定的包检测的能力, 仅仅加密流量具有一定的风险, 添加 obfs http 模式之后, 通过运营商的流量会被识别为设定好的网址的流量, 假设你设定的是 bing, 那么你的 SS 流量会被判别为你当前正在访问 bing, 减少了被封杀的可能性，**tls模式安全性高于http模式**。
